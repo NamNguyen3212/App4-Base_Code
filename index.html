@@ -95,8 +95,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+	<div class="page" id="one"> <!--Page 1-->
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1> <!--Question 1 heading-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you feel any sadness or hoplessness?</p>   <!--This is a question that asks users if they feel sad or hopeless-->  
+		<a href="#two"  onclick="depressionAdd();" class="w3-btn w3-black"> Yes </a> <!--This is for the yes button, which has the function depressionadd within it to trigger adding to depression_count jump to page 2-->
+         	<a href="#two"  onclick="anxietyAdd();" class="w3-btn w3-black"> No </a> <!--This is for the no buttom, which has the function anxietyadd within it to trigger adding to the anxiety_count jump to page 2-->
+
+
+
+    	</div>
 	
 </body>
 </html>
