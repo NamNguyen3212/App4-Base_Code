@@ -130,6 +130,33 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
          	<a href="#four"  onclick="depressionAdd();;" class="w3-btn w3-black"> No </a> <!--This is for the no button,which has the function allergyadd within it to trigger adding to anxiety_count jump to page 4-->
     	</div>
 </div>
+	<div class="page" id="four"> <!--Page 4-->
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1> <!--Question 4 heading-->
+	</div>
+
+    	<div id="content" class="w3-container">
+        <p>Do you eat more or less than you used to?</p>   <!--This is a question that asks users if they eat more or less than they used to--> 
+		<a href="#five"  onclick="depressionAdd();" class="w3-btn w3-black"> Yes </a> <!--This is for the yes button which has the function depressionadd within it to trigger adding to depresion_count jump to page 5-->
+         	<a href="#five"  onclick="anxietyAdd();" class="w3-btn w3-black"> No </a> <!--This is for the no button which has the function anxietyadd within it to trigger adding to the anxiety count and jump to page 5-->
+         	
+
+    	</div>
+</div>
+
+<div class="page" id="five">  <!--Page 5-->
+  <div id="header" class="w3-container w3-flat-carrot">
+    <h1>Results</h1> <!--Results heading-->
+  </div>
+
+  <div id="content" class="w3-container">
+    </p> you may have:</p>
+    <p id="result"></p>
+    <a href="#five"  onclick="getResults();" class="w3-btn w3-black"> Results </a> <!--This is the result button, which triggers the function getResult, which then print out a statement diagnosing the user's illness based on their inputs.-->
+    <script>
+   </script>
+  </div>
+</div>
 	
 </body>
 </html>
