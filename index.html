@@ -108,63 +108,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!--Disclaimer so noone will take the results seriously and die-->
 
 
-<div class="page" id="one"> <!--Page 1-->
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1> <!--Question 1 heading-->
-	</div>
+ 
 	
-    	<div id="content" class="w3-container">
+		<h1>Question 1</h1> <!--Question 1 heading-->
         <p>Do you feel any sadness or hoplessness?</p>   <!--This is a question that asks users if they feel sad or hopeless-->  
 		<a href="#two"  onclick="depressionAdd();" class="w3-btn w3-black"> Yes </a> <!--This is for the yes button, which has the function depressionadd within it to trigger adding to depression_count jump to page 2-->
          	<a href="#two"  onclick="anxietyAdd();" class="w3-btn w3-black"> No </a> <!--This is for the no buttom, which has the function anxietyadd within it to trigger adding to the anxiety_count jump to page 2-->
-
-
-
-    	</div>
-</div>
-
-<div class="page" id="two"> <!--Page 2-->
-	<div class="w3-container w3-flat-carrot">
+         	
 		<h1>Question 2</h1>  <!--Question 2 heading-->
-	</div>
-	
-	<div id="content" class="w3-container">
 		<p>Do you feel cranky or on edge often?</p><!--This is a question that asks the users if they fell cranky or on edge-->
 		<a href="#three"  onclick="anxietyAdd();" class="w3-btn w3-black"> Yes </a>  <!--This is for the yes button which has the function anxietyadd within it to trigger adding to the Anxiety count jump to page 3-->
          	<a href="#three"  onclick="depressionAdd();;" class="w3-btn w3-black"> No </a> <!--This is for the no button, which has the function depressionadd within it to trigger adding to depression_count jump to page 3-->
-	</div>
-</div>	
-<div class="page" id="three"> <!--Page 3-->
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1> <!--Question 3 heading-->
-	</div>
 	
-    	<div id="content" class="w3-container">
+		<h1>Question 3</h1> <!--Question 3 heading-->
         <p>Do you you feel like you are losing control often?</p>   <!--This is a question that asks the users if they have a sore throat--> 
 		<a href="#four"  onclick="anxietyAdd();" class="w3-btn w3-black"> Yes </a> <!--This is for the yes button which has the function depressionadd within it to trigger adding to the depreesion count jump to page 4-->
          	<a href="#four"  onclick="depressionAdd();;" class="w3-btn w3-black"> No </a> <!--This is for the no button,which has the function allergyadd within it to trigger adding to anxiety_count jump to page 4-->
-    	</div>
-</div>
-<div class="page" id="four"> <!--Page 4-->
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1> <!--Question 4 heading-->
-	</div>
 
-    	<div id="content" class="w3-container">
+		<h1>Question 4</h1> <!--Question 4 heading-->
         <p>Do you eat more or less than you used to?</p>   <!--This is a question that asks users if they eat more or less than they used to--> 
 		<a href="#five"  onclick="depressionAdd();" class="w3-btn w3-black"> Yes </a> <!--This is for the yes button which has the function depressionadd within it to trigger adding to depresion_count jump to page 5-->
          	<a href="#five"  onclick="anxietyAdd();" class="w3-btn w3-black"> No </a> <!--This is for the no button which has the function anxietyadd within it to trigger adding to the anxiety count and jump to page 5-->
-         	
 
-    	</div>
-</div>
 
-<div class="page" id="five">  <!--Page 5-->
-  <div id="header" class="w3-container w3-flat-carrot">
     <h1>Results</h1> <!--Results heading-->
-  </div>
-
-  <div id="content" class="w3-container">
     </p> you may have:</p>
     <p id="result"></p>
     <a href="#five"  onclick="getResults();" class="w3-btn w3-black"> Results </a> <!--This is the result button, which triggers the function getResult, which then print out a statement diagnosing the user's illness based on their inputs.-->
