@@ -57,15 +57,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function getResults(){
           if(depression_count>anxiety_count)//condition for this part of the function to trigger
           {document.write("There is a "+(depression_count/total)*100+ "% probability of you having depression."+ "<br>");//Writes the result statement by determining the probability of the user having depression based on their input.
-           document.write("However, mental illnesses are always difficult to correctly diagnose due to many overlapping symptoms, please see a psychiatrist if you are having any problems mentally.");
+           document.write("However, mental illnesses are always difficult to correctly diagnose due to many overlapping symptoms, please see a psychiatrist if you are having any problems mentally.");//A disclaimer, so nobody dies or something idk.
         
           }
           else if (anxiety_count>depression_count)//condition for this part of the function to trigger
           {document.write("There is a "+(anxiety_count/total)*100+"% probability of you having anxiety."+"<br>");//Writes the result statement by determining the probability of the user having anxiety based on their input.
-          document.write("However, mental illnesses are always difficult to correctly diagnose due to many overlapping symptoms, please see a psychiatrist if you are having any problems mentally.");
+          document.write("However, mental illnesses are always difficult to correctly diagnose due to many overlapping symptoms, please see a psychiatrist if you are having any problems mentally.");// Another disclaimer in case someone takes this diagnosis seriously.
           }
           else  //for when allergy_count=cold_count
-          { document.write("The results are inconclusive, please see a health professional.");} //writes the inconclusive result when cold depression_count=anxiety_count count.
+          { document.write("The results are inconclusive, please see a health professional.");} //writes the inconclusive result when depresioncount= anxiety count.
         }
   </script>
 
@@ -111,7 +111,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!--Disclaimer so noone will take the results seriously and die-->
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!-- Another disclaimer so noone will take the results seriously and sue or something-->
 
 
  
@@ -138,7 +138,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
                  <img src="https://preview.redd.it/125ebgihdbu41.jpg?auto=webp&s=8eaffc539b116a4caf87cae867a27efea5c69b15" alt="a bunny"> <!-- This  is an image of a bunny-->
 
     <h1>Results</h1> <!--Results heading-->
-    </p> YOU may have:</p>
+    </p> YOU may have:</p> <!--Prints out the line You may have-->
     <p id="result"></p>
     <a href="#five"  onclick="getResults();" class="w3-btn w3-black"> Results </a> <!--This is the result button, which triggers the function getResult, which then print out a statement diagnosing the user's illness based on their inputs.-->
     <script>
